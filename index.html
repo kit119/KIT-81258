@@ -370,7 +370,6 @@ small {
 
 
 <script>
-const iaurl="https://archive.org/download/koreana-tripitaka-palman-daejanggyeong/clean/"
 // --- UI LOGIC (New) ---
 const menuBtn = document.getElementById('menu-toggle-btn');
 const sideMenu = document.getElementById('side-menu');
@@ -454,7 +453,8 @@ const FILTERS = {
   'light': 'invert(0%)',
   'sepia': 'sepia(100%) hue-rotate(10deg) contrast(0.9)', 
   'dark': 'invert(100%) hue-rotate(180deg)' , 
-  'mirror': 'invert(100%) hue-rotate(180deg)  brightness(0.8) contrast(1.2)' , 
+  //'mirror': 'invert(100%) hue-rotate(180deg)  brightness(0.8) contrast(1.2)' , 
+  'mirror': 'invert(100%) sepia(100%) saturate(500%) hue-rotate(10deg) brightness(1.0) contrast(1.5)'
 };
 
 let currentFilter = 'light';
@@ -717,9 +717,7 @@ $(document).ready(function() {
     if (specialPages.length > 0) {
         finalData.push({ text: '📜 Covers & Story', children: specialPages.sort((a,b) => a.id - b.id) });
     }
-
     Object.keys(groupedObj).sort().forEach(group => {
-        const iapdf="https://archive.org/download/koreana-tripitaka-palman-daejanggyeong/pdf/"
         const groupPdfUrl = `${iapdf}/${group}.pdf`;
         finalData.push({
 		  text: `📁 ${group} <a href="${groupPdfUrl}" target="_blank" onclick="event.stopPropagation();"> (PDF) </a>`,

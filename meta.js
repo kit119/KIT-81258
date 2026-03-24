@@ -1,3 +1,6 @@
+const iaurl="https://archive.org/download/koreana-tripitaka-palman-daejanggyeong/clean/"
+const iapdf="https://archive.org/download/koreana-tripitaka-palman-daejanggyeong/pdf/"
+
 filelist={
 "0000":"00000",
 "000A":"0000A",
@@ -4428,7 +4431,9 @@ filelist={
 
 canonlist={
 "00000":["Cover","Tripitaka Koreana"],
-"0000A":["Prajnyaapaaramitaa","Heart Sutra"],
+"0000A":["Heart Sutra","Prajnyaapaaramitaa Hridaya"],
+"0000B":["Goryeo Buddhist paintings","(Wikipedia, 2025)"],
+"0000C":["Interior of Seokguram","(Wikipedia, 2021)"],
 "K0001":["大般若波羅蜜多經","대반야바라밀다경","1200"],
 "K0002":["放光般若波羅蜜經","방광반야바라밀경","40"],
 "K0003":["摩訶般若波羅蜜經","마하반야바라밀경","54"],
