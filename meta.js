@@ -4,6 +4,8 @@ const iapdf="https://archive.org/download/koreana-tripitaka-palman-daejanggyeong
 filelist={
 "0000":"00000",
 "000A":"0000A",
+"000B":"0000B",
+"000C":"0000C",
 "0001":"K0001-B001-P0001-0016",
 "0002":"K0001-B001-P0017-0032",
 "0003":"K0001-B001-P0033-0048",
